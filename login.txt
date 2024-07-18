@@ -1,0 +1,18 @@
+
+
+{
+    "email": "anzo@test.com",
+    "password": "jkluiopm"
+}
+
+{
+    "email": "goku@test.com",
+    "password": "jkluiopm"
+}
+
+try {
+        const users = await User.find({});
+        res.send(users);
+    } catch(e) {
+        res.status(500).send(e);
+    }
